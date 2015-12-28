@@ -1,0 +1,5 @@
+C:\Git\VehicleTester\VehicleLibrary\bin\Debug\VehicleLibrary.dll
+C:\Git\VehicleTester\VehicleLibrary\bin\Debug\VehicleLibrary.pdb
+C:\Git\VehicleTester\VehicleLibrary\obj\Debug\VehicleLibrary.csprojResolveAssemblyReference.cache
+C:\Git\VehicleTester\VehicleLibrary\obj\Debug\VehicleLibrary.dll
+C:\Git\VehicleTester\VehicleLibrary\obj\Debug\VehicleLibrary.pdb

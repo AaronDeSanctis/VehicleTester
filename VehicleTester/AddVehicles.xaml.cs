@@ -28,12 +28,13 @@ namespace VehicleTester
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             Close();
+            (App.Current.MainWindow as MainWindow).Show();
         }
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
             VehicleLibrary.VehicleFactory vehicleFactory = new VehicleLibrary.VehicleFactory(MakeText.Text, ModelText.Text, YearText.Text, TotalMilesText.Text, (bool)CheckEngineLight.IsChecked, (bool)Oil.IsChecked);
-            Close();
+            Hide();
         }
 
         private void ModelText_TextChanged(object sender, TextChangedEventArgs e)
@@ -65,5 +66,6 @@ namespace VehicleTester
         {
 
         }
+
     }
 }

@@ -19,6 +19,6 @@
         <CheckBox x:Name="CheckEngineLight" Foreground="White" Content="Check engine light is on" HorizontalAlignment="Left" Margin="132,237,0,0" VerticalAlignment="Top" Background="Black" Checked="CheckEngineLight_Checked"/>
         <Label x:Name="TotalMiles" Content="Total Miles" Foreground="White" HorizontalAlignment="Left" Margin="132,188,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="TotalMilesText" HorizontalAlignment="Left" Height="26" Margin="318,188,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="TotalMilesText_TextChanged"/>
-        <Button x:Name="Next" Content="Next" Background="Black" Foreground="White" HorizontalAlignment="Left" Margin="258,304,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Next" Content="Next" Background="Black" Foreground="White" HorizontalAlignment="Left" Margin="258,304,0,0" VerticalAlignment="Top" Width="75" Click="Next_Click"/>
     </Grid>
 </Window>
