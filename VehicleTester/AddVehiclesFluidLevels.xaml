@@ -16,7 +16,7 @@
         <Button x:Name="Next" Content="Next" Background="Black" Foreground="White" HorizontalAlignment="Left" Margin="177,290,0,0" VerticalAlignment="Top" Width="75" Click="Next_Click"/>
         <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Background="Black" Foreground="White" Margin="23,24,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click"/>
         <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Background="Black" Foreground="White" Margin="318,290,0,0" VerticalAlignment="Top" Width="75" Click="Clear_Click"/>
-        <Label x:Name="InQuarts" Content="Each fluid should be the amount in quarts" Foreground="White" HorizontalAlignment="Left" Margin="154,38,0,0" VerticalAlignment="Top" Width="284"/>
+        <Label x:Name="InQuarts" Content="Each fluid should be the amount in quarts" Foreground="White" HorizontalAlignment="Left" Margin="154,64,0,0" VerticalAlignment="Top" Width="284"/>
         <Label x:Name="EngineOil" Foreground="White" Content="Engine Oil" HorizontalAlignment="Left" Margin="154,111,0,0" VerticalAlignment="Top" Width="122"/>
         <Label x:Name="TransmissionFluid" Foreground="White" Content="Transmission Fluid" HorizontalAlignment="Left" Margin="154,142,0,0" VerticalAlignment="Top" Width="122"/>
         <Label x:Name="Coolant" Foreground="White" Content="Coolant" HorizontalAlignment="Left" Margin="154,170,0,0" VerticalAlignment="Top" Width="122"/>
