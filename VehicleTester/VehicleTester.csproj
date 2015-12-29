@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddVehiclesFluidLevels.xaml.cs">
+      <DependentUpon>AddVehiclesFluidLevels.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Directions.xaml.cs">
       <DependentUpon>Directions.xaml</DependentUpon>
     </Compile>
@@ -62,6 +65,10 @@
       <DependentUpon>TestVehicles.xaml</DependentUpon>
     </Compile>
     <Page Include="AddVehicles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddVehiclesFluidLevels.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

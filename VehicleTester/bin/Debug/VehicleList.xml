@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Vehicle>
+    <Make>Nissan</Make>
+    <Model>Maxima</Model>
+    <Year>1999</Year>
+    <TotalMiles>217111</TotalMiles>
+    <LiscensePlate>185-XSA</LiscensePlate>
+    <CheckEngineLight>true</CheckEngineLight>
+    <RecentOilChange>false</RecentOilChange>
+    <VehicleNumber>3</VehicleNumber>
+    <EngineOil>2</EngineOil>
+    <TransmissionFluid>2</TransmissionFluid>
+    <Coolant>3</Coolant>
+    <BrakeFluid>4</BrakeFluid>
+    <PowerSteeringFluid>1</PowerSteeringFluid>
+  </Vehicle>
+</ArrayOfVehicle>

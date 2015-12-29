@@ -33,8 +33,9 @@ namespace VehicleTester
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
-            VehicleLibrary.VehicleFactory vehicleFactory = new VehicleLibrary.VehicleFactory(MakeText.Text, ModelText.Text, YearText.Text, TotalMilesText.Text, (bool)CheckEngineLight.IsChecked, (bool)Oil.IsChecked);
+            VehicleLibrary.VehicleFactory vehicleFactory = new VehicleLibrary.VehicleFactory(MakeText.Text, ModelText.Text, YearText.Text, TotalMilesText.Text, LicensePlateText.Text,(bool)CheckEngineLight.IsChecked, (bool)Oil.IsChecked);
             Hide();
+            AddVehiclesFluidLevels addVehiclesFluidLevels = new AddVehiclesFluidLevels(vehicleFactory, this);
         }
 
         private void ModelText_TextChanged(object sender, TextChangedEventArgs e)
@@ -66,6 +67,20 @@ namespace VehicleTester
         {
 
         }
+        private void ClearSlate()
+        {
+            ModelText.Clear(); MakeText.Clear(); YearText.Clear(); TotalMilesText.Clear(); LicensePlateText.Clear();
+            CheckEngineLight.IsChecked = false; Oil.IsChecked = false;
+        }
 
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            ClearSlate();
+        }
+
+        private void LicensePlateText_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
