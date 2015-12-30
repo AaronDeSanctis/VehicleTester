@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Git\VehicleTester\VehicleTester\App.xaml
-51559143216
+7-1406066403
 
-13203710964
+15-2040749170
 14-1715743016
-AddVehicles.xaml;AddVehiclesFluidLevels.xaml;Directions.xaml;MainWindow.xaml;TestVehicles.xaml;
+AddVehicles.xaml;AddVehiclesExternals.xaml;AddVehiclesInterior.xaml;AddVehiclesFluidLevels.xaml;Directions.xaml;MainWindow.xaml;TestVehicles.xaml;
 
-True
+False
 

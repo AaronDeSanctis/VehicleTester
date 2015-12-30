@@ -1,0 +1,28 @@
+﻿<Window x:Class="VehicleTester.AddVehiclesInterior"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VehicleTester"
+        mc:Ignorable="d"
+        Title="AddVehiclesInterior" Height="400" Width="600">
+    <Grid Background="#FF363131">
+        <Border BorderBrush="Black" BorderThickness="15" Height="370" VerticalAlignment="Top"/>
+        <Button x:Name="Next" Content="Next" Background="Black" Foreground="White" HorizontalAlignment="Left" Margin="177,290,0,0" VerticalAlignment="Top" Width="75" Click="Next_Click"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Background="Black" Foreground="White" Margin="23,24,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click"/>
+        <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Background="Black" Foreground="White" Margin="318,290,0,0" VerticalAlignment="Top" Width="75" Click="Clear_Click"/>
+        <Label x:Name="Seatbelt" Content="Does each seat have a seatbelt?" Foreground="White" HorizontalAlignment="Left" Margin="130,75,0,0" VerticalAlignment="Top" Width="226"/>
+        <Label x:Name="Doors" Content="Does each door close and lock properly?" Foreground="White" HorizontalAlignment="Left" Margin="130,106,0,0" VerticalAlignment="Top" Width="226"/>
+        <Label x:Name="Speedometer" Content="Does the speedometer work?" Foreground="White" HorizontalAlignment="Left" Margin="130,137,0,0" VerticalAlignment="Top" Width="226"/>
+        <Label x:Name="Odometer" Content="Does the odometer work?" Foreground="White" HorizontalAlignment="Left" Margin="130,168,0,0" VerticalAlignment="Top" Width="226"/>
+        <Label x:Name="Airbags" Content="Does the vehicle have air bags?" Foreground="White" HorizontalAlignment="Left" Margin="130,199,0,0" VerticalAlignment="Top" Width="226"/>
+        <Label x:Name="Shifting" Content="Do you have any issues shifting gears?" Foreground="White" HorizontalAlignment="Left" Margin="130,230,0,0" VerticalAlignment="Top" Width="226"/>
+        <CheckBox x:Name="SeatbeltBox"  HorizontalAlignment="Left" Margin="413,75,0,0" VerticalAlignment="Top" Checked="SeatbeltBox_Checked"/>
+        <CheckBox x:Name="DoorBox"  HorizontalAlignment="Left" Margin="413,106,0,0" VerticalAlignment="Top" Checked="DoorBox_Checked"/>
+        <CheckBox x:Name="SpeedometerBox"  HorizontalAlignment="Left" Margin="413,137,0,0" VerticalAlignment="Top" Checked="SpeedometerBox_Checked"/>
+        <CheckBox x:Name="OdometerBox"  HorizontalAlignment="Left" Margin="413,168,0,0" VerticalAlignment="Top" Checked="OdometerBox_Checked"/>
+        <CheckBox x:Name="AirbagsBox"  HorizontalAlignment="Left" Margin="413,199,0,0" VerticalAlignment="Top" Checked="AirbagsBox_Checked"/>
+        <CheckBox x:Name="ShiftingBox"  HorizontalAlignment="Left" Margin="413,230,0,0" VerticalAlignment="Top" Checked="ShiftingBox_Checked"/>
+
+    </Grid>
+</Window>

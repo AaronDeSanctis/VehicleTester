@@ -42,3 +42,7 @@ C:\Git\VehicleTester\VehicleTester\obj\Debug\VehicleTester.Properties.Resources.
 C:\Git\VehicleTester\VehicleTester\obj\Debug\VehicleTester.csproj.GenerateResource.Cache
 C:\Git\VehicleTester\VehicleTester\obj\Debug\AddVehiclesFluidLevels.g.cs
 C:\Git\VehicleTester\VehicleTester\obj\Debug\AddVehiclesFluidLevels.baml
+C:\Git\VehicleTester\VehicleTester\obj\Debug\AddVehiclesInterior.g.cs
+C:\Git\VehicleTester\VehicleTester\obj\Debug\AddVehiclesInterior.baml
+C:\Git\VehicleTester\VehicleTester\obj\Debug\AddVehiclesExternals.g.cs
+C:\Git\VehicleTester\VehicleTester\obj\Debug\AddVehiclesExternals.baml

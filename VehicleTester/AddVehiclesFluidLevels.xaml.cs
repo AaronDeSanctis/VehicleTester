@@ -40,6 +40,7 @@ namespace VehicleTester
         {
             vehicleFactory.UpdateFluids(EngineOilText.Text, TransmissionFluidText.Text, CoolantText.Text, BrakeFluidText.Text, PowerSteeringFluidText.Text);
             Hide();
+            AddVehiclesInterior interior = new AddVehiclesInterior(this, vehicleFactory);
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
