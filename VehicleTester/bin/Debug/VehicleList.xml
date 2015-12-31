@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Vehicle>
+    <Make>Nissan</Make>
+    <Model>Maxima</Model>
+    <Year>1998</Year>
+    <TotalMiles>217777</TotalMiles>
+    <LiscensePlate>185-XSA</LiscensePlate>
+    <CheckEngineLight>false</CheckEngineLight>
+    <RecentOilChange>true</RecentOilChange>
+    <VehicleNumber>1</VehicleNumber>
+    <EngineOil>2</EngineOil>
+    <TransmissionFluid>1</TransmissionFluid>
+    <Coolant>3</Coolant>
+    <BrakeFluid>4</BrakeFluid>
+    <PowerSteeringFluid>5</PowerSteeringFluid>
+    <HasSeatbelts>true</HasSeatbelts>
+    <SpeedometerWorks>true</SpeedometerWorks>
+    <OdometerWorks>true</OdometerWorks>
+    <DoorsWork>true</DoorsWork>
+    <HasAirbags>true</HasAirbags>
+    <ShiftingProblems>false</ShiftingProblems>
+    <BrakesWork>true</BrakesWork>
+    <TiresNew>true</TiresNew>
+    <TiresFull>true</TiresFull>
+    <LightsWork>true</LightsWork>
+    <IsLoud>false</IsLoud>
+    <IdolsCorrectly>false</IdolsCorrectly>
+    <CanDrive>false</CanDrive>
+    <Title>Nissan Maxima 185-XSA</Title>
+    <Completion>0</Completion>
+  </Vehicle>
+</ArrayOfVehicle>

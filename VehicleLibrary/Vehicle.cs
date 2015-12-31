@@ -33,6 +33,9 @@ namespace VehicleLibrary
         public bool LightsWork { get; set; }
         public bool IsLoud { get; set; }
         public bool IdolsCorrectly { get; set; }
+        public bool CanDrive { get; set; }
+        public string Title { get; set; }
+        public int Completion { get; set; }
 
         public Vehicle()
         {
@@ -49,6 +52,12 @@ namespace VehicleLibrary
             this.CheckEngineLight = CheckEngineLight;
             this.RecentOilChange = RecentOilChange;
             this.VehicleNumber = VehicleNumber;
+            SetTitle();
+        }
+
+        private void SetTitle()
+        {
+            Title = Make + " " + Model + " " + LiscensePlate;
         }
 
         public void SetFluids(float EngineOil, float TransmissionFluid, float Coolant, float BrakeFluid, float PowerSteeringFluid)
@@ -78,6 +87,15 @@ namespace VehicleLibrary
             this.LightsWork = LightsWork;
             this.IsLoud = IsLoud;
             this.IdolsCorrectly = IdolsCorrectly;
+        }
+        public void ApproveVehicle()
+        {
+            CanDrive = true;
+        }
+
+        public void DeclineVehicle()
+        {
+            CanDrive = false;
         }
     }
 }

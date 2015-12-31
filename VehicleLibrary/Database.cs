@@ -12,7 +12,36 @@ namespace VehicleLibrary
     {
         private static string VehicleListFile = "VehicleList.xml";
         private static string AllIDStorageFile = "AllIDStorage.xml";
+        private static string UnapprovedVehiclesFile = "UnapprovedVehicles.xml";
+        private static string ApprovedVehiclesFile = "ApprovedVehicles.xml";
 
+        public static void SaveToApproved(Vehicle vehicle)
+        {
+            UpdateDatabase(ApprovedVehiclesFile, vehicle);
+        }
+        public static void SaveToUnapproved(Vehicle vehicle)
+        {
+            UpdateDatabase(UnapprovedVehiclesFile, vehicle);
+        }
+        private static void SortTestedVehicles()
+        {
+            List<Vehicle> allVehicles = ReadDatabase<Vehicle>(VehicleListFile);
+            List<Vehicle> approved = new List<Vehicle>();
+            List<Vehicle> unapproved = new List<Vehicle>();
+            foreach (Vehicle vehicle in allVehicles)
+            {
+                if (vehicle.Completion == 100)
+                {
+                    approved.Add(vehicle);
+                }
+                else
+                {
+                    unapproved.Add(vehicle);
+                }
+            }
+            UpdateDatabase(UnapprovedVehiclesFile, unapproved);
+            UpdateDatabase(ApprovedVehiclesFile, approved);
+        }
         public static void SaveVehicle(Vehicle vehicle)
         {
             List<Vehicle> allVehicles = ReadDatabase<Vehicle>(VehicleListFile);
@@ -22,8 +51,19 @@ namespace VehicleLibrary
 
         public static List<Vehicle> GetVehicles()
         {
-            List<Vehicle> allVehicles = ReadDatabase<Vehicle>(VehicleListFile);
-            return allVehicles;
+            return ReadDatabase<Vehicle>(VehicleListFile);
+        }
+
+        public static List<Vehicle> GetUnapprovedVehicles()
+        {
+            SortTestedVehicles();
+            return ReadDatabase<Vehicle>(UnapprovedVehiclesFile);
+        }
+
+        public static List<Vehicle> GetApprovedVehicles()
+        {
+            SortTestedVehicles();
+            return ReadDatabase<Vehicle>(ApprovedVehiclesFile);
         }
 
         public static void UpdateCurrentVehicle(Vehicle vehicle)

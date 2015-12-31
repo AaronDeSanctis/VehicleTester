@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using VehicleLibrary;
 
 namespace VehicleTester
 {
@@ -22,13 +23,35 @@ namespace VehicleTester
         public TestVehicles()
         {
             InitializeComponent();
+            UnapprovedVehicles.ItemsSource = Database.GetUnapprovedVehicles();
+            ApprovedVehicles.ItemsSource = Database.GetApprovedVehicles();
             Show();
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            Show();
             (App.Current.MainWindow as MainWindow).Show();
+        }
+
+        private void Test_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Done_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UnapprovedVehicles_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
+
+        private void ApprovedVehicles_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
