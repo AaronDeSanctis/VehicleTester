@@ -20,6 +20,7 @@ namespace VehicleTester
     /// </summary>
     public partial class TestVehicles : Window
     {
+        int ApprovedCount = 0;
         public TestVehicles()
         {
             InitializeComponent();
@@ -30,17 +31,32 @@ namespace VehicleTester
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Show();
+            Close();
             (App.Current.MainWindow as MainWindow).Show();
         }
 
         private void Test_Click(object sender, RoutedEventArgs e)
         {
+            foreach (Vehicle vehicle in Database.GetUnapprovedVehicles())
+            {
+                if(UnapprovedVehicles.SelectedItem.ToString() == vehicle.Title + vehicle.Completion.ToString())
+                {
+                    vehicle.Completion = TestingStation.RunTests(vehicle);
+                    if(vehicle.Completion >= 55)
+                    {
+                        ApprovedCount++;
+                        Database.SaveToApproved(vehicle);
+                    }
 
+                }
+            }
         }
 
         private void Done_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("You have approved " + ApprovedCount.ToString() + " vehicles.", "Thank you for testing");
+            Close();
+            (App.Current.MainWindow as MainWindow).Show();
 
         }
 

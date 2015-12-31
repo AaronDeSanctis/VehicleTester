@@ -27,7 +27,7 @@ namespace VehicleTester
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            Hide();
+            Close();
             (App.Current.MainWindow as MainWindow).Show();
         }
 

@@ -17,10 +17,12 @@ namespace VehicleLibrary
 
         public static void SaveToApproved(Vehicle vehicle)
         {
+            SortTestedVehicles();
             UpdateDatabase(ApprovedVehiclesFile, vehicle);
         }
         public static void SaveToUnapproved(Vehicle vehicle)
         {
+            SortTestedVehicles();
             UpdateDatabase(UnapprovedVehiclesFile, vehicle);
         }
         private static void SortTestedVehicles()
@@ -30,7 +32,7 @@ namespace VehicleLibrary
             List<Vehicle> unapproved = new List<Vehicle>();
             foreach (Vehicle vehicle in allVehicles)
             {
-                if (vehicle.Completion == 100)
+                if (vehicle.Completion >= 55)
                 {
                     approved.Add(vehicle);
                 }
