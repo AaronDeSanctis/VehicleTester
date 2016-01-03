@@ -33,9 +33,38 @@ namespace VehicleTester
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
-            VehicleLibrary.VehicleFactory vehicleFactory = new VehicleLibrary.VehicleFactory(MakeText.Text, ModelText.Text, YearText.Text, TotalMilesText.Text, LicensePlateText.Text,(bool)CheckEngineLight.IsChecked, (bool)Oil.IsChecked);
-            Hide();
-            AddVehiclesFluidLevels addVehiclesFluidLevels = new AddVehiclesFluidLevels(vehicleFactory, this);
+            int ParseObject;
+            if (MakeText.Text == "")
+            {
+                MessageBox.Show("Each field must be filled out", "Empty Field");
+            }
+            else if (ModelText.Text == "")
+            {
+                MessageBox.Show("Each field must be filled out", "Empty Field");
+            }
+            else if (YearText.Text == "")
+            {
+                MessageBox.Show("Each field must be filled out", "Empty Field");
+            }
+            else if (TotalMilesText.Text == "")
+            {
+                MessageBox.Show("Each field must be filled out", "Empty Field");
+            }
+            else if (LicensePlateText.Text == "")
+            {
+                MessageBox.Show("Each field must be filled out", "Empty Field");
+            }
+            else if (int.TryParse(TotalMilesText.Text, out ParseObject) == false)
+            {
+                TotalMilesText.Clear();
+                MessageBox.Show("Enter only numbers for Total Miles", "Fix Total Miles");
+            }
+            else
+            {
+                VehicleLibrary.VehicleFactory vehicleFactory = new VehicleLibrary.VehicleFactory(MakeText.Text, ModelText.Text, YearText.Text, TotalMilesText.Text, LicensePlateText.Text, (bool)CheckEngineLight.IsChecked, (bool)Oil.IsChecked);
+                Hide();
+                AddVehiclesFluidLevels addVehiclesFluidLevels = new AddVehiclesFluidLevels(vehicleFactory, this);
+            }
         }
 
         private void ModelText_TextChanged(object sender, TextChangedEventArgs e)

@@ -7,3 +7,4 @@ C:\Users\chilke\Documents\Git\VehicleTester\VehicleLibrary\bin\Debug\VehicleLibr
 C:\Users\chilke\Documents\Git\VehicleTester\VehicleLibrary\bin\Debug\VehicleLibrary.pdb
 C:\Users\chilke\Documents\Git\VehicleTester\VehicleLibrary\obj\Debug\VehicleLibrary.dll
 C:\Users\chilke\Documents\Git\VehicleTester\VehicleLibrary\obj\Debug\VehicleLibrary.pdb
+C:\Users\chilke\Documents\Git\VehicleTester\VehicleLibrary\obj\Debug\VehicleLibrary.csprojResolveAssemblyReference.cache
