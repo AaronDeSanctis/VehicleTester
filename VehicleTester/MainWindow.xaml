@@ -8,10 +8,8 @@
         Title="MainWindow" Height="400" Width="600">
     <Grid Background="#FF363131">
         <Border BorderBrush="Black" BorderThickness="15" HorizontalAlignment="Left" Height="370" VerticalAlignment="Top" Width="592"/>
-        <Label x:Name="Introduction" Content="Vehicle Tester" HorizontalAlignment="Left" Margin="192,96,0,0" VerticalAlignment="Top" Width="194" Foreground="White" FontFamily="Segoe WP Black" FontSize="26.667"/>
-        <Button x:Name="AddVehicle" Content="Add Vehicle" HorizontalAlignment="Left" Margin="113,220,0,0" VerticalAlignment="Top" Width="120" Background="Black" Foreground="White" Click="AddVehicle_Click"/>
-        <Button x:Name="GetDirections" Content="Get Directions" HorizontalAlignment="Left" Margin="363,220,0,0" Background="Black" Foreground="White" VerticalAlignment="Top" Width="120" Click="GetDirections_Click"/>
-        <Button x:Name="TestVehicle" Content="Test Vehicle" HorizontalAlignment="Left" Margin="238,220,0,0" Background="Black" Foreground="White" VerticalAlignment="Top" Width="120" Click="TestVehicle_Click"/>
+        <Label x:Name="Introduction" Content="Vehicle Testing Questionaire" HorizontalAlignment="Left" Margin="114,90,0,0" VerticalAlignment="Top" Width="348" Foreground="White" FontFamily="Segoe WP Black" FontSize="26.667"/>
+        <Button x:Name="StartQuestionaire" Content="Start Questionaire" HorizontalAlignment="Left" Margin="174,172,0,0" VerticalAlignment="Top" Width="228" Background="Black" Foreground="White" Click="StartQuestionaire_Click" Height="56" FontSize="24"/>
 
     </Grid>
 </Window>

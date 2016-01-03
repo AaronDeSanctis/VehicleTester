@@ -26,8 +26,87 @@ namespace VehicleLibrary
             Completion += CheckLightsWork(vehicle);
             Completion += CheckIsLoud(vehicle);
             Completion += CheckIdolsCorrectly(vehicle);
+            Completion += CheckNewBattery(vehicle);
+            Completion += CheckJumpstart(vehicle);
+            Completion += CheckOverheat(vehicle);
+            Completion += CheckDifficultBraking(vehicle);
+            Completion += CheckDifficultTurning(vehicle);
+            Completion += CheckLowEngineOil(vehicle);
             return Completion;
         }
+
+        private static int CheckLowEngineOil(Vehicle vehicle)
+        {
+            if (vehicle.LowEngineOil)
+            { 
+                return 0;
+            }
+            else
+            {
+                return 2;
+            }
+        }
+
+        private static int CheckDifficultTurning(Vehicle vehicle)
+        {
+            if (vehicle.DifficultTurning)
+            {
+                return 0;
+            }
+            else
+            {
+                return 2;
+            }
+        }
+
+        private static int CheckDifficultBraking(Vehicle vehicle)
+        {
+            if (vehicle.DifficultBraking)
+            {
+                return 0;
+            }
+            else
+            {
+                return 2;
+            }
+        }
+
+        private static int CheckOverheat(Vehicle vehicle)
+        {
+            if (vehicle.Overheat)
+            {
+                return 0;
+            }
+            else
+            {
+                return 2;
+            }
+        }
+
+        private static int CheckJumpstart(Vehicle vehicle)
+        {
+            if (vehicle.Jumpstart)
+            {
+                return 0;
+            }
+            else
+            {
+                return 2;
+            }
+        }
+
+        private static int CheckNewBattery(Vehicle vehicle)
+        {
+            if (vehicle.NewBattery)
+            {
+                return 2;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
         private static int CheckTotalMiles(Vehicle vehicle)
         {
             if(int.Parse(vehicle.TotalMiles) >= 150000)

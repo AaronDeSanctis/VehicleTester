@@ -4,16 +4,73 @@
     <Make>Nissan</Make>
     <Model>Maxima</Model>
     <Year>1998</Year>
-    <TotalMiles>217777</TotalMiles>
+    <TotalMiles>217111</TotalMiles>
     <LiscensePlate>185-XSA</LiscensePlate>
+    <CheckEngineLight>true</CheckEngineLight>
+    <RecentOilChange>false</RecentOilChange>
+    <VehicleNumber>5</VehicleNumber>
+    <HasSeatbelts>true</HasSeatbelts>
+    <SpeedometerWorks>true</SpeedometerWorks>
+    <OdometerWorks>true</OdometerWorks>
+    <DoorsWork>true</DoorsWork>
+    <HasAirbags>true</HasAirbags>
+    <ShiftingProblems>true</ShiftingProblems>
+    <BrakesWork>false</BrakesWork>
+    <TiresNew>false</TiresNew>
+    <TiresFull>false</TiresFull>
+    <LightsWork>true</LightsWork>
+    <IsLoud>true</IsLoud>
+    <IdolsCorrectly>false</IdolsCorrectly>
+    <CanDrive>false</CanDrive>
+    <Title>Nissan Maxima 185-XSA</Title>
+    <Completion>0</Completion>
+    <NewBattery>true</NewBattery>
+    <Jumpstart>true</Jumpstart>
+    <Overheat>false</Overheat>
+    <DifficultBraking>true</DifficultBraking>
+    <DifficultTurning>false</DifficultTurning>
+    <LowEngineOil>false</LowEngineOil>
+  </Vehicle>
+  <Vehicle>
+    <Make />
+    <Model />
+    <Year />
+    <TotalMiles />
+    <LiscensePlate />
+    <CheckEngineLight>false</CheckEngineLight>
+    <RecentOilChange>false</RecentOilChange>
+    <VehicleNumber>2</VehicleNumber>
+    <HasSeatbelts>false</HasSeatbelts>
+    <SpeedometerWorks>false</SpeedometerWorks>
+    <OdometerWorks>false</OdometerWorks>
+    <DoorsWork>false</DoorsWork>
+    <HasAirbags>false</HasAirbags>
+    <ShiftingProblems>false</ShiftingProblems>
+    <BrakesWork>false</BrakesWork>
+    <TiresNew>false</TiresNew>
+    <TiresFull>false</TiresFull>
+    <LightsWork>false</LightsWork>
+    <IsLoud>false</IsLoud>
+    <IdolsCorrectly>false</IdolsCorrectly>
+    <CanDrive>false</CanDrive>
+    <Title />
+    <Completion>0</Completion>
+    <NewBattery>false</NewBattery>
+    <Jumpstart>false</Jumpstart>
+    <Overheat>false</Overheat>
+    <DifficultBraking>false</DifficultBraking>
+    <DifficultTurning>false</DifficultTurning>
+    <LowEngineOil>false</LowEngineOil>
+  </Vehicle>
+  <Vehicle>
+    <Make>Oldsmobile</Make>
+    <Model>Cutlass</Model>
+    <Year>1999</Year>
+    <TotalMiles>62234</TotalMiles>
+    <LiscensePlate>564-HMU</LiscensePlate>
     <CheckEngineLight>false</CheckEngineLight>
     <RecentOilChange>true</RecentOilChange>
-    <VehicleNumber>1</VehicleNumber>
-    <EngineOil>2</EngineOil>
-    <TransmissionFluid>1</TransmissionFluid>
-    <Coolant>3</Coolant>
-    <BrakeFluid>4</BrakeFluid>
-    <PowerSteeringFluid>5</PowerSteeringFluid>
+    <VehicleNumber>3</VehicleNumber>
     <HasSeatbelts>true</HasSeatbelts>
     <SpeedometerWorks>true</SpeedometerWorks>
     <OdometerWorks>true</OdometerWorks>
@@ -22,12 +79,111 @@
     <ShiftingProblems>false</ShiftingProblems>
     <BrakesWork>true</BrakesWork>
     <TiresNew>true</TiresNew>
-    <TiresFull>true</TiresFull>
+    <TiresFull>false</TiresFull>
     <LightsWork>true</LightsWork>
+    <IsLoud>true</IsLoud>
+    <IdolsCorrectly>false</IdolsCorrectly>
+    <CanDrive>false</CanDrive>
+    <Title>Oldsmobile Cutlass 564-HMU</Title>
+    <Completion>0</Completion>
+    <NewBattery>true</NewBattery>
+    <Jumpstart>false</Jumpstart>
+    <Overheat>false</Overheat>
+    <DifficultBraking>false</DifficultBraking>
+    <DifficultTurning>false</DifficultTurning>
+    <LowEngineOil>false</LowEngineOil>
+  </Vehicle>
+  <Vehicle>
+    <Make>Nissan</Make>
+    <Model>Maxima</Model>
+    <Year>1999</Year>
+    <TotalMiles>217811</TotalMiles>
+    <LiscensePlate>564-HMG</LiscensePlate>
+    <CheckEngineLight>true</CheckEngineLight>
+    <RecentOilChange>false</RecentOilChange>
+    <VehicleNumber>4</VehicleNumber>
+    <HasSeatbelts>true</HasSeatbelts>
+    <SpeedometerWorks>true</SpeedometerWorks>
+    <OdometerWorks>true</OdometerWorks>
+    <DoorsWork>false</DoorsWork>
+    <HasAirbags>true</HasAirbags>
+    <ShiftingProblems>false</ShiftingProblems>
+    <BrakesWork>false</BrakesWork>
+    <TiresNew>false</TiresNew>
+    <TiresFull>false</TiresFull>
+    <LightsWork>false</LightsWork>
     <IsLoud>false</IsLoud>
+    <IdolsCorrectly>false</IdolsCorrectly>
+    <CanDrive>false</CanDrive>
+    <Title>Nissan Maxima 564-HMG</Title>
+    <Completion>0</Completion>
+    <NewBattery>false</NewBattery>
+    <Jumpstart>true</Jumpstart>
+    <Overheat>false</Overheat>
+    <DifficultBraking>true</DifficultBraking>
+    <DifficultTurning>false</DifficultTurning>
+    <LowEngineOil>true</LowEngineOil>
+  </Vehicle>
+  <Vehicle>
+    <Make>Nissan</Make>
+    <Model>Maxima</Model>
+    <Year>1998</Year>
+    <TotalMiles>217111</TotalMiles>
+    <LiscensePlate>185-XSA</LiscensePlate>
+    <CheckEngineLight>true</CheckEngineLight>
+    <RecentOilChange>false</RecentOilChange>
+    <VehicleNumber>5</VehicleNumber>
+    <HasSeatbelts>true</HasSeatbelts>
+    <SpeedometerWorks>true</SpeedometerWorks>
+    <OdometerWorks>true</OdometerWorks>
+    <DoorsWork>true</DoorsWork>
+    <HasAirbags>true</HasAirbags>
+    <ShiftingProblems>true</ShiftingProblems>
+    <BrakesWork>false</BrakesWork>
+    <TiresNew>false</TiresNew>
+    <TiresFull>false</TiresFull>
+    <LightsWork>true</LightsWork>
+    <IsLoud>true</IsLoud>
     <IdolsCorrectly>false</IdolsCorrectly>
     <CanDrive>false</CanDrive>
     <Title>Nissan Maxima 185-XSA</Title>
     <Completion>0</Completion>
+    <NewBattery>true</NewBattery>
+    <Jumpstart>true</Jumpstart>
+    <Overheat>false</Overheat>
+    <DifficultBraking>true</DifficultBraking>
+    <DifficultTurning>false</DifficultTurning>
+    <LowEngineOil>false</LowEngineOil>
+  </Vehicle>
+  <Vehicle>
+    <Make>Chevrolet</Make>
+    <Model>Malibu</Model>
+    <Year>2000</Year>
+    <TotalMiles>110000</TotalMiles>
+    <LiscensePlate>bml501</LiscensePlate>
+    <CheckEngineLight>true</CheckEngineLight>
+    <RecentOilChange>false</RecentOilChange>
+    <VehicleNumber>6</VehicleNumber>
+    <HasSeatbelts>true</HasSeatbelts>
+    <SpeedometerWorks>true</SpeedometerWorks>
+    <OdometerWorks>true</OdometerWorks>
+    <DoorsWork>true</DoorsWork>
+    <HasAirbags>false</HasAirbags>
+    <ShiftingProblems>false</ShiftingProblems>
+    <BrakesWork>true</BrakesWork>
+    <TiresNew>true</TiresNew>
+    <TiresFull>true</TiresFull>
+    <LightsWork>true</LightsWork>
+    <IsLoud>true</IsLoud>
+    <IdolsCorrectly>false</IdolsCorrectly>
+    <CanDrive>false</CanDrive>
+    <Title>Chevrolet Malibu bml501</Title>
+    <Completion>25</Completion>
+    <NewBattery>false</NewBattery>
+    <Jumpstart>false</Jumpstart>
+    <Overheat>false</Overheat>
+    <DifficultBraking>true</DifficultBraking>
+    <DifficultTurning>true</DifficultTurning>
+    <LowEngineOil>true</LowEngineOil>
   </Vehicle>
 </ArrayOfVehicle>

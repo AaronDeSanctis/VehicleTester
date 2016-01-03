@@ -39,7 +39,22 @@ namespace VehicleTester
         {
             vehicleFactory.UpdateExternals((bool)BrakesBox.IsChecked, (bool)NewTiresBox.IsChecked, (bool)TiresFullBox.IsChecked, (bool)LightsBox.IsChecked, (bool)LoudBox.IsChecked, (bool)IdolBox.IsChecked);
             Hide();
-            (App.Current.MainWindow as MainWindow).Show();
+            vehicleFactory.vehicle.Completion = TestingStation.RunTests(vehicleFactory.vehicle);
+            ChooseNextWindow();
+        }
+
+        private void ChooseNextWindow()
+        {
+            if(vehicleFactory.vehicle.Completion >= 35)
+            {
+                MessageBox.Show("Congratulations!! Your vehicle has passed with a score of " + vehicleFactory.vehicle.Completion.ToString(), "Vehicle Approved");
+                VehicleApproved vehicleApproved = new VehicleApproved(vehicleFactory, this);
+            }
+            else
+            {
+                MessageBox.Show("Your vehicle has failed with a score of  " + vehicleFactory.vehicle.Completion.ToString() + ". Please take your vehicle in to a mechanic as soon as possible. Here is a list of mechanics in your area.", "Vehicle Denied");
+                VehicleUnapproved vehicleUnapproved = new VehicleUnapproved(vehicleFactory, this);
+            }
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)

@@ -8,20 +8,21 @@
         Title="AddVehiclesFluidLevels" Height="400" Width="600">
     <Grid Background="#FF363131">
         <Border BorderBrush="Black" BorderThickness="15" Height="370" VerticalAlignment="Top"/>
-        <TextBox x:Name="EngineOilText" HorizontalAlignment="Left" Height="26" Margin="318,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="EngineOilText_TextChanged"/>
-        <TextBox x:Name="TransmissionFluidText" HorizontalAlignment="Left" Height="23" Margin="318,142,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="TransmissionFluidText_TextChanged"/>
-        <TextBox x:Name="CoolantText" HorizontalAlignment="Left" Height="23" Margin="318,170,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="CoolantText_TextChanged"/>
-        <TextBox x:Name="BrakeFluidText" HorizontalAlignment="Left" Height="23" Margin="318,198,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="BrakeFluidText_TextChanged"/>
-        <TextBox x:Name="PowerSteeringFluidText" HorizontalAlignment="Left" Height="23" Margin="318,226,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="PowerSteeringFluidText_TextChanged"/>
         <Button x:Name="Next" Content="Next" Background="Black" Foreground="White" HorizontalAlignment="Left" Margin="177,290,0,0" VerticalAlignment="Top" Width="75" Click="Next_Click"/>
         <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Background="Black" Foreground="White" Margin="23,24,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click"/>
         <Button x:Name="Clear" Content="Clear" HorizontalAlignment="Left" Background="Black" Foreground="White" Margin="318,290,0,0" VerticalAlignment="Top" Width="75" Click="Clear_Click"/>
-        <Label x:Name="InQuarts" Content="Each fluid should be the amount in quarts" Foreground="White" HorizontalAlignment="Left" Margin="154,64,0,0" VerticalAlignment="Top" Width="284"/>
-        <Label x:Name="EngineOil" Foreground="White" Content="Engine Oil" HorizontalAlignment="Left" Margin="154,111,0,0" VerticalAlignment="Top" Width="122"/>
-        <Label x:Name="TransmissionFluid" Foreground="White" Content="Transmission Fluid" HorizontalAlignment="Left" Margin="154,142,0,0" VerticalAlignment="Top" Width="122"/>
-        <Label x:Name="Coolant" Foreground="White" Content="Coolant" HorizontalAlignment="Left" Margin="154,170,0,0" VerticalAlignment="Top" Width="122"/>
-        <Label x:Name="BrakeFluid" Foreground="White" Content="BrakeFluid" HorizontalAlignment="Left" Margin="154,198,0,0" VerticalAlignment="Top" Width="122"/>
-        <Label x:Name="PowerSteeringFluid" Foreground="White" Content="Power Steering Fluid" HorizontalAlignment="Left" Margin="154,226,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label x:Name="BatteryNew" Foreground="White" Content="Was your vehicle's battery bought within the last year?" HorizontalAlignment="Left" Margin="72,70,0,0" VerticalAlignment="Top" Width="321"/>
+        <Label x:Name="Jumpstart" Foreground="White" Content="Do you ever have to jumpstart your car to get it started?" HorizontalAlignment="Left" Margin="72,101,0,0" VerticalAlignment="Top" Width="321"/>
+        <Label x:Name="Overheat" Foreground="White" Content="Does your vehicle ever overheat?" HorizontalAlignment="Left" Margin="72,132,0,0" VerticalAlignment="Top" Width="321"/>
+        <Label x:Name="DifficultBraking" Foreground="White" Content="Is it ever difficult to stop your vehicle while driving?" HorizontalAlignment="Left" Margin="72,163,0,0" VerticalAlignment="Top" Width="321"/>
+        <Label x:Name="DifficultTurning" Foreground="White" Content="Is it ever difficult to turn your vehicle while driving?" HorizontalAlignment="Left" Margin="72,194,0,0" VerticalAlignment="Top" Width="321"/>
+        <Label x:Name="LowEngineOil" Foreground="White" Content="Is your engine oil low?" HorizontalAlignment="Left" Margin="72,225,0,0" VerticalAlignment="Top" Width="321"/>
+        <CheckBox x:Name="NewBatteryBox"  HorizontalAlignment="Left" Margin="413,75,0,0" VerticalAlignment="Top" Checked="NewBatteryBox_Checked" />
+        <CheckBox x:Name="JumpstartBox"  HorizontalAlignment="Left" Margin="413,106,0,0" VerticalAlignment="Top" Checked="JumpstartBox_Checked" />
+        <CheckBox x:Name="OverheatBox"  HorizontalAlignment="Left" Margin="413,137,0,0" VerticalAlignment="Top" Checked="OverheatBox_Checked" />
+        <CheckBox x:Name="DifficultBrakingBox"  HorizontalAlignment="Left" Margin="413,168,0,0" VerticalAlignment="Top" Checked="DifficultBrakingBox_Checked" />
+        <CheckBox x:Name="DifficultTurningBox"  HorizontalAlignment="Left" Margin="413,199,0,0" VerticalAlignment="Top" Checked="DifficultTurningBox_Checked" />
+        <CheckBox x:Name="LowEngineOilBox"  HorizontalAlignment="Left" Margin="413,230,0,0" VerticalAlignment="Top" Checked="LowEngineOilBox_Checked" />
 
     </Grid>
 </Window>

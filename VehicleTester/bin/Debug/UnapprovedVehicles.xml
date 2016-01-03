@@ -30,4 +30,34 @@
     <Title>Nissan Maxima 185-XSA</Title>
     <Completion>0</Completion>
   </Vehicle>
+  <Vehicle>
+    <Make />
+    <Model />
+    <Year />
+    <TotalMiles />
+    <LiscensePlate />
+    <CheckEngineLight>false</CheckEngineLight>
+    <RecentOilChange>false</RecentOilChange>
+    <VehicleNumber>2</VehicleNumber>
+    <EngineOil>0</EngineOil>
+    <TransmissionFluid>0</TransmissionFluid>
+    <Coolant>0</Coolant>
+    <BrakeFluid>0</BrakeFluid>
+    <PowerSteeringFluid>0</PowerSteeringFluid>
+    <HasSeatbelts>false</HasSeatbelts>
+    <SpeedometerWorks>false</SpeedometerWorks>
+    <OdometerWorks>false</OdometerWorks>
+    <DoorsWork>false</DoorsWork>
+    <HasAirbags>false</HasAirbags>
+    <ShiftingProblems>false</ShiftingProblems>
+    <BrakesWork>false</BrakesWork>
+    <TiresNew>false</TiresNew>
+    <TiresFull>false</TiresFull>
+    <LightsWork>false</LightsWork>
+    <IsLoud>false</IsLoud>
+    <IdolsCorrectly>false</IdolsCorrectly>
+    <CanDrive>false</CanDrive>
+    <Title />
+    <Completion>0</Completion>
+  </Vehicle>
 </ArrayOfVehicle>

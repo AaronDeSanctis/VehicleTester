@@ -70,6 +70,12 @@
     <Compile Include="TestVehicles.xaml.cs">
       <DependentUpon>TestVehicles.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VehicleApproved.xaml.cs">
+      <DependentUpon>VehicleApproved.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleUnapproved.xaml.cs">
+      <DependentUpon>VehicleUnapproved.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddVehicles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -106,6 +112,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="TestVehicles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VehicleApproved.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VehicleUnapproved.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

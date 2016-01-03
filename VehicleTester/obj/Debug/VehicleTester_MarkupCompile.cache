@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Git\VehicleTester\VehicleTester\obj\Debug\
+C:\Users\chilke\Documents\Git\VehicleTester\VehicleTester\obj\Debug\
 VehicleTester
 none
 false
 DEBUG;TRACE
-C:\Git\VehicleTester\VehicleTester\App.xaml
-7-1406066403
+C:\Users\chilke\Documents\Git\VehicleTester\VehicleTester\App.xaml
+9525822037
 
-111647229483
-14-1715743016
-AddVehicles.xaml;AddVehiclesExternals.xaml;AddVehiclesInterior.xaml;AddVehiclesFluidLevels.xaml;Directions.xaml;MainWindow.xaml;TestVehicles.xaml;
+131452767203
+141154247039
+AddVehicles.xaml;AddVehiclesExternals.xaml;AddVehiclesInterior.xaml;AddVehiclesFluidLevels.xaml;Directions.xaml;MainWindow.xaml;TestVehicles.xaml;VehicleApproved.xaml;VehicleUnapproved.xaml;
 
 False
 

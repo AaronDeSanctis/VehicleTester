@@ -42,7 +42,7 @@ namespace VehicleTester
                 if(UnapprovedVehicles.SelectedItem.ToString() == vehicle.Title + vehicle.Completion.ToString())
                 {
                     vehicle.Completion = TestingStation.RunTests(vehicle);
-                    if(vehicle.Completion >= 55)
+                    if(vehicle.Completion >= 35)
                     {
                         ApprovedCount++;
                         Database.SaveToApproved(vehicle);

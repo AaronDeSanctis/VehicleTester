@@ -16,11 +16,6 @@ namespace VehicleLibrary
         public bool CheckEngineLight { get; set; }
         public bool RecentOilChange { get; set; }
         public int VehicleNumber { get; set; }
-        public float EngineOil { get; set; }
-        public float TransmissionFluid { get; set; }
-        public float Coolant { get; set; }
-        public float BrakeFluid { get; set; }
-        public float PowerSteeringFluid { get; set; }
         public bool HasSeatbelts { get; set; }
         public bool SpeedometerWorks { get; set; }
         public bool OdometerWorks { get; set; }
@@ -36,6 +31,12 @@ namespace VehicleLibrary
         public bool CanDrive { get; set; }
         public string Title { get; set; }
         public int Completion { get; set; }
+        public bool NewBattery { get; set; }
+        public bool Jumpstart { get; set; }
+        public bool Overheat { get; set; }
+        public bool DifficultBraking { get; set; }
+        public bool DifficultTurning { get; set; }
+        public bool LowEngineOil { get; set; }
 
         public Vehicle()
         {
@@ -60,15 +61,6 @@ namespace VehicleLibrary
             Title = Make + " " + Model + " " + LiscensePlate;
         }
 
-        public void SetFluids(float EngineOil, float TransmissionFluid, float Coolant, float BrakeFluid, float PowerSteeringFluid)
-        {
-            this.EngineOil = EngineOil;
-            this.TransmissionFluid = TransmissionFluid;
-            this.Coolant = Coolant;
-            this.BrakeFluid = BrakeFluid;
-            this.PowerSteeringFluid = PowerSteeringFluid;
-        }
-
         public void SetInterior(bool HasSeatbelts, bool DoorsWork, bool SpeedometerWorks, bool OdometerWorks, bool HasAirbags, bool ShiftingProblems)
         {
             this.HasSeatbelts = HasSeatbelts;
@@ -88,6 +80,17 @@ namespace VehicleLibrary
             this.IsLoud = IsLoud;
             this.IdolsCorrectly = IdolsCorrectly;
         }
+
+        public void SetFluids(bool NewBattery, bool Jumpstart, bool Overheat, bool DifficultBraking, bool DifficultTurning, bool LowEngineOil)
+        {
+            this.NewBattery = NewBattery;
+            this.Jumpstart = Jumpstart;
+            this.Overheat = Overheat;
+            this.DifficultBraking = DifficultBraking;
+            this.DifficultTurning = DifficultTurning;
+            this.LowEngineOil = LowEngineOil;
+        }
+
         public void ApproveVehicle()
         {
             CanDrive = true;

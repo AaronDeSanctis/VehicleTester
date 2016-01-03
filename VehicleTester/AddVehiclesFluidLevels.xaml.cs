@@ -38,7 +38,7 @@ namespace VehicleTester
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
-            vehicleFactory.UpdateFluids(EngineOilText.Text, TransmissionFluidText.Text, CoolantText.Text, BrakeFluidText.Text, PowerSteeringFluidText.Text);
+            vehicleFactory.UpdateFluids((bool)NewBatteryBox.IsChecked, (bool)JumpstartBox.IsChecked, (bool)OverheatBox.IsChecked, (bool)DifficultBrakingBox.IsChecked, (bool)DifficultTurningBox.IsChecked, (bool)LowEngineOilBox.IsChecked);
             Hide();
             AddVehiclesInterior interior = new AddVehiclesInterior(this, vehicleFactory);
         }
@@ -50,30 +50,36 @@ namespace VehicleTester
 
         private void ClearSlate()
         {
-            EngineOilText.Clear(); TransmissionFluidText.Clear(); CoolantText.Clear(); BrakeFluidText.Clear(); PowerSteeringFluidText.Clear();
+            NewBatteryBox.IsChecked = false; JumpstartBox.IsChecked = false; OverheatBox.IsChecked = false;
+            DifficultBrakingBox.IsChecked = false; DifficultTurningBox.IsChecked = false; LowEngineOilBox.IsChecked = false;
         }
 
-        private void EngineOilText_TextChanged(object sender, TextChangedEventArgs e)
+        private void NewBatteryBox_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void TransmissionFluidText_TextChanged(object sender, TextChangedEventArgs e)
+        private void JumpstartBox_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void CoolantText_TextChanged(object sender, TextChangedEventArgs e)
+        private void OverheatBox_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void BrakeFluidText_TextChanged(object sender, TextChangedEventArgs e)
+        private void DifficultBrakingBox_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void PowerSteeringFluidText_TextChanged(object sender, TextChangedEventArgs e)
+        private void DifficultTurningBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LowEngineOilBox_Checked(object sender, RoutedEventArgs e)
         {
 
         }

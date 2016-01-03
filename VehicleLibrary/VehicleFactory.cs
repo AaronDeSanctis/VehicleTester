@@ -24,15 +24,16 @@ namespace VehicleLibrary
             Database.SaveVehicle(vehicle);
         }
 
-        public void UpdateFluids(string EngineOil, string TransmissionFluid, string Coolant, string BrakeFluid, string PowerSteeringFluid)
-        {
-            vehicle.SetFluids(float.Parse(EngineOil), float.Parse(TransmissionFluid) ,float.Parse(Coolant), float.Parse(BrakeFluid), float.Parse(PowerSteeringFluid));
-            Database.UpdateCurrentVehicle(vehicle);
-        }
 
         public void UpdateInterior(bool HasSeatbelts, bool DoorsWork, bool SpeedometerWorks, bool OdometerWorks, bool HasAirbags, bool ShiftingProblems)
         {
             vehicle.SetInterior(HasSeatbelts, DoorsWork, SpeedometerWorks, OdometerWorks, HasAirbags, ShiftingProblems);
+            Database.UpdateCurrentVehicle(vehicle);
+        }
+
+        public void UpdateFluids(bool NewBattery, bool Jumpstart, bool Overheat, bool DifficultBraking, bool DifficultTurning, bool LowEngineOil)
+        {
+            vehicle.SetFluids(NewBattery, Jumpstart, Overheat, DifficultBraking, DifficultTurning, LowEngineOil);
             Database.UpdateCurrentVehicle(vehicle);
         }
 
