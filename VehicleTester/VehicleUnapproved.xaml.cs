@@ -1,17 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using VehicleLibrary;
+using System.Diagnostics;
+using System.Device.Location;
 
 namespace VehicleTester
 {
@@ -46,7 +38,34 @@ namespace VehicleTester
 
         private void FindMechanic_Click(object sender, RoutedEventArgs e)
         {
-
+            Triangulate();
         }
+
+        private void Triangulate()
+        {
+            GeoCoordinate g = new GeoCoordinate();
+            double latitude = g.Latitude;
+            double longitude = g.Longitude;
+
+            StringBuilder searchstring = new StringBuilder("https://www.google.com/maps/search/mechanics/@");
+
+            searchstring.Append(latitude + ", ");
+            searchstring.Append(longitude);
+            searchstring.Append(",13z");
+            Process myProcess = new Process();
+            try
+            {
+                myProcess.StartInfo.UseShellExecute = true;
+                myProcess.StartInfo.FileName = searchstring.ToString();
+                myProcess.Start();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            //Form2 frm = new Form2(searchstring.ToString());
+            //frm.Show();
+        }
+
     }
 }

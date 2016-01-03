@@ -53,7 +53,7 @@
     <IsLoud>false</IsLoud>
     <IdolsCorrectly>false</IdolsCorrectly>
     <CanDrive>false</CanDrive>
-    <Title>  </Title>
+    <Title />
     <Completion>0</Completion>
     <NewBattery>false</NewBattery>
     <Jumpstart>false</Jumpstart>
@@ -208,7 +208,7 @@
     <IsLoud>false</IsLoud>
     <IdolsCorrectly>false</IdolsCorrectly>
     <CanDrive>false</CanDrive>
-    <Title>  </Title>
+    <Title />
     <Completion>0</Completion>
     <NewBattery>false</NewBattery>
     <Jumpstart>false</Jumpstart>
@@ -216,5 +216,98 @@
     <DifficultBraking>false</DifficultBraking>
     <DifficultTurning>false</DifficultTurning>
     <LowEngineOil>false</LowEngineOil>
+  </Vehicle>
+  <Vehicle>
+    <Make>Mitsubishi</Make>
+    <Model>Galant</Model>
+    <Year>2010</Year>
+    <TotalMiles>21000</TotalMiles>
+    <LiscensePlate>FatBitch</LiscensePlate>
+    <CheckEngineLight>false</CheckEngineLight>
+    <RecentOilChange>true</RecentOilChange>
+    <VehicleNumber>10</VehicleNumber>
+    <HasSeatbelts>false</HasSeatbelts>
+    <SpeedometerWorks>false</SpeedometerWorks>
+    <OdometerWorks>false</OdometerWorks>
+    <DoorsWork>false</DoorsWork>
+    <HasAirbags>false</HasAirbags>
+    <ShiftingProblems>true</ShiftingProblems>
+    <BrakesWork>false</BrakesWork>
+    <TiresNew>false</TiresNew>
+    <TiresFull>false</TiresFull>
+    <LightsWork>false</LightsWork>
+    <IsLoud>true</IsLoud>
+    <IdolsCorrectly>false</IdolsCorrectly>
+    <CanDrive>false</CanDrive>
+    <Title>Mitsubishi Galant FatBitch</Title>
+    <Completion>0</Completion>
+    <NewBattery>false</NewBattery>
+    <Jumpstart>false</Jumpstart>
+    <Overheat>true</Overheat>
+    <DifficultBraking>true</DifficultBraking>
+    <DifficultTurning>true</DifficultTurning>
+    <LowEngineOil>true</LowEngineOil>
+  </Vehicle>
+  <Vehicle>
+    <Make>Mitsubishi</Make>
+    <Model>Galant</Model>
+    <Year>2010</Year>
+    <TotalMiles>21000</TotalMiles>
+    <LiscensePlate>FatBitch</LiscensePlate>
+    <CheckEngineLight>false</CheckEngineLight>
+    <RecentOilChange>true</RecentOilChange>
+    <VehicleNumber>10</VehicleNumber>
+    <HasSeatbelts>false</HasSeatbelts>
+    <SpeedometerWorks>false</SpeedometerWorks>
+    <OdometerWorks>false</OdometerWorks>
+    <DoorsWork>false</DoorsWork>
+    <HasAirbags>false</HasAirbags>
+    <ShiftingProblems>true</ShiftingProblems>
+    <BrakesWork>false</BrakesWork>
+    <TiresNew>false</TiresNew>
+    <TiresFull>false</TiresFull>
+    <LightsWork>false</LightsWork>
+    <IsLoud>true</IsLoud>
+    <IdolsCorrectly>false</IdolsCorrectly>
+    <CanDrive>false</CanDrive>
+    <Title>Mitsubishi Galant FatBitch</Title>
+    <Completion>0</Completion>
+    <NewBattery>false</NewBattery>
+    <Jumpstart>false</Jumpstart>
+    <Overheat>true</Overheat>
+    <DifficultBraking>true</DifficultBraking>
+    <DifficultTurning>true</DifficultTurning>
+    <LowEngineOil>true</LowEngineOil>
+  </Vehicle>
+  <Vehicle>
+    <Make>Mitsubishi</Make>
+    <Model>Galant</Model>
+    <Year>2010</Year>
+    <TotalMiles>21000</TotalMiles>
+    <LiscensePlate>FatBitch</LiscensePlate>
+    <CheckEngineLight>false</CheckEngineLight>
+    <RecentOilChange>true</RecentOilChange>
+    <VehicleNumber>10</VehicleNumber>
+    <HasSeatbelts>false</HasSeatbelts>
+    <SpeedometerWorks>false</SpeedometerWorks>
+    <OdometerWorks>false</OdometerWorks>
+    <DoorsWork>false</DoorsWork>
+    <HasAirbags>false</HasAirbags>
+    <ShiftingProblems>true</ShiftingProblems>
+    <BrakesWork>false</BrakesWork>
+    <TiresNew>false</TiresNew>
+    <TiresFull>false</TiresFull>
+    <LightsWork>false</LightsWork>
+    <IsLoud>true</IsLoud>
+    <IdolsCorrectly>false</IdolsCorrectly>
+    <CanDrive>false</CanDrive>
+    <Title>Mitsubishi Galant FatBitch</Title>
+    <Completion>0</Completion>
+    <NewBattery>false</NewBattery>
+    <Jumpstart>false</Jumpstart>
+    <Overheat>true</Overheat>
+    <DifficultBraking>true</DifficultBraking>
+    <DifficultTurning>true</DifficultTurning>
+    <LowEngineOil>true</LowEngineOil>
   </Vehicle>
 </ArrayOfVehicle>
